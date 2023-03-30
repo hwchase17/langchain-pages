@@ -1,217 +1,310 @@
-<html>
- <head>
-  <style>
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LangChain | Integrations</title>
+    <!--favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Fontawesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
 
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  </style>
+
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
- <body>
-   <h1>🦜️🔗 LangChain Integrations</h1>
-    <div class="info">
-    This page contains status indicators and links to the various types of integrations LangChain provides.
-   </div>
-   <h2>LLMs</h2>
-   <table>
-    <tr>
-      <th>LLM Provider</th>
-      <th>Python</th>
-      <th>TypeScript</th>
-    </tr>
-    <tr>
-      <td>OpenAI</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/openai.html">✅</a></td>
-      <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/llms/openai">✅</a></td>
-    </tr>
-    <tr>
-      <td>Cohere</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/cohere.html">✅</a></td>
-      <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/llms/cohere">✅</a></td>
-    </tr>
-    <tr>
-      <td>Hugging Face Hub</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/huggingface_hub.html">✅</a></td>
-      <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/llms/huggingface">✅</a></td>
-    </tr>
-    <tr>
-      <td>AI21 Labs</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/ai21.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Aleph Alpha</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/aleph_alpha.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Anthropic</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/anthropic_example.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Azure OpenAI</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/azure_openai_example.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Banana</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/banana.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Cerebrium AI</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/cerebriumai_example.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>DeepInfra</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/deepinfra_example.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Forefront AI</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/forefrontai_example.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Goose AI</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/gooseai_example.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Manifest</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/manifest.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Modal</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/modal.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Petals</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/petals_example.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Self-Hosted (via RunHouse)</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/self_hosted_examples.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Stochastic AI</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/stochasticai.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Writer</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/writer.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-  </table>
-   <h2>Embeddings</h2>
-   <table>
-       <tr>
-      <th>Embedding Provider</th>
-      <th>Python</th>
-      <th>TypeScript</th>
-    </tr>
-    <tr>
-      <td>OpenAI</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#openai">✅</a></td>
-      <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/embeddings">✅</a></td>
-    </tr>
-    <tr>
-      <td>Cohere</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#cohere">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Hugging Face Hub</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#hugging-face-hub">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>TensorFlow Hub</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#tensorflowhub">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Instruct Embeddings</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#instructembeddings">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Self Hosted (via RunHouse) Embeddings</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#self-hosted-embeddings">✅</a></td>
-      <td>❌</td>
-    </tr>
-  </table>
-   <h2>VectorStores</h2>
-   <table>
-       <tr>
-      <th>VectorStore Provider</th>
-      <th>Python</th>
-      <th>TypeScript</th>
-    </tr>
-    <tr>
-      <td>Chroma</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/chroma.html">✅</a></td>
-      <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/vector_stores/chroma">✅</a></td>
-    </tr>
-    <tr>
-      <td>Pinecone</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/pinecone.html">✅</a></td>
-      <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/vector_stores/pinecone">✅</a></td>
-    </tr>
-    <tr>
-      <td>Weaviate</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/weaviate.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>ElasticSearch</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/elasticsearch.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>FAISS</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/faiss.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Milvus</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/milvus.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>OpenSearch</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/opensearch.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>Qdrant</td>
-      <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/qdrant.html">✅</a></td>
-      <td>❌</td>
-    </tr>
-    <tr>
-      <td>HNSWLib</td>
-      <td>❌</td>
-      <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/vector_stores/hnswlib">✅</a></td>
-    </tr>
-    <tr>
-      <td>Supabase</td>
-      <td>❌</td>
-      <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/vector_stores/supabase">✅</a></td>
-    </tr>
-  </table>
- </body>
+<body>
+    
+    <!-- Header Section -->
+	<header>
+		<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">🦜️🔗 LangChain Integrations</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="features.html" class="nav-link">Features</a>
+						</li>
+						<li class="nav-item active">
+							<a href="integrations.html" class="nav-link">Integrations</a>
+						</li>
+						<li class="nav-item">
+							<a href="index.html#About" class="nav-link">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a href="index.html#Contact" class="nav-link">Contact</a>
+						</li>
+                        <li class="nav-item">
+							<a href="https://blog.langchain.dev/" class="nav-link">Blog</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+    
+<section style="margin-top: 80px;">
+    <div class="container">
+        <h1 text-left mt-8 mb-6>🦜️🔗 LangChain Integrations</h1>
+        <div class="info">
+            The 🦜️🔗 LangChain Integrations page provides users with an overview of the various types of integrations offered by LangChain. The page is divided into three sections, namely LLMs, Embeddings, and VectorStores. Each section contains a list of providers and their corresponding Python and TypeScript integration statuses, which are represented using clear and concise checkmarks or crosses.
+        </div>
+        <h2 id="llms" class="text-left mt-5 mb-4">LLMs</h2>
+        <table class="table table-striped table-bordered table-responsive-md text-left">
+            <thead>
+                <tr>
+                    <th>LLM Provider</th>
+                    <th>Python</th>
+                    <th>TypeScript</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>OpenAI</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/openai.html">✅</a></td>
+                    <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/llms/openai">✅</a></td>
+                  </tr>
+                  <tr>
+                    <td>Cohere</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/cohere.html">✅</a></td>
+                    <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/llms/cohere">✅</a></td>
+                  </tr>
+                  <tr>
+                    <td>Hugging Face Hub</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/huggingface_hub.html">✅</a></td>
+                    <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/llms/huggingface">✅</a></td>
+                  </tr>
+                  <tr>
+                    <td>AI21 Labs</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/ai21.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Aleph Alpha</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/aleph_alpha.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Anthropic</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/anthropic_example.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Azure OpenAI</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/azure_openai_example.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Banana</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/banana.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Cerebrium AI</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/cerebriumai_example.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>DeepInfra</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/deepinfra_example.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Forefront AI</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/forefrontai_example.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Goose AI</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/gooseai_example.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Manifest</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/manifest.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Modal</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/modal.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Petals</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/petals_example.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Self-Hosted (via RunHouse)</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/self_hosted_examples.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Stochastic AI</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/stochasticai.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Writer</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/llms/integrations/writer.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+            </tbody>
+        </table>
+        <h2 id="embeddings" class="text-left mt-5 mb-4">Embeddings</h2>
+        <table class="table table-striped table-bordered table-responsive-md text-left">
+            <thead>
+                <tr>
+                    <th>Embedding Provider</th>
+                    <th>Python</th>
+                    <th>TypeScript</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>OpenAI</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#openai">✅</a></td>
+                    <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/embeddings">✅</a></td>
+                  </tr>
+                  <tr>
+                    <td>Cohere</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#cohere">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Hugging Face Hub</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#hugging-face-hub">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>TensorFlow Hub</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#tensorflowhub">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Instruct Embeddings</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#instructembeddings">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Self Hosted (via RunHouse) Embeddings</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/examples/embeddings.html#self-hosted-embeddings">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+            </tbody>
+        </table>
+        <h2 id="vectorstores" class="text-left mt-5 mb-4">VectorStores</h2>
+        <table class="table table-striped table-bordered table-responsive-md text-left">
+            <thead>
+                <tr>
+                    <th>VectorStore Provider</th>
+                    <th>Python</th>
+                    <th>TypeScript</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chroma</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/chroma.html">✅</a></td>
+                    <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/vector_stores/chroma">✅</a></td>
+                  </tr>
+                  <tr>
+                    <td>Pinecone</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/pinecone.html">✅</a></td>
+                    <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/vector_stores/pinecone">✅</a></td>
+                  </tr>
+                  <tr>
+                    <td>Weaviate</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/weaviate.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>ElasticSearch</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/elasticsearch.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>FAISS</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/faiss.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Milvus</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/milvus.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>OpenSearch</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/opensearch.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Qdrant</td>
+                    <td><a href="https://langchain.readthedocs.io/en/latest/modules/indexes/vectorstore_examples/qdrant.html">✅</a></td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>HNSWLib</td>
+                    <td>❌</td>
+                    <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/vector_stores/hnswlib">✅</a></td>
+                  </tr>
+                  <tr>
+                    <td>Supabase</td>
+                    <td>❌</td>
+                    <td><a href="https://hwchase17.github.io/langchainjs/docs/modules/indexes/vector_stores/supabase">✅</a></td>
+                  </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+</section>
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>🦜️🔗 LangChain</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html#" class="text-white">Home</a></li>
+                    <li><a href="index.html#About" class="text-white">Features</a></li>
+                    <li><a href="index.html#Contact" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5>Social</h5>
+                <ul class="list-unstyled">
+                  <li><a href="https://twitter.com/langchainai" class="text-white"><i class="fab fa-twitter"></i> Twitter</a></li>
+                  <li><a href="https://github.com/hwchase17/langchain" class="text-white"><i class="fab fa-github"></i> Github</a></li>
+                  <li><a href="https://discord.gg/6adMQxSpJS" class="text-white" ><i class="fab fa-discord"></i> Discord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <p class="text-center mb-0">&copy; 2023 🦜️🔗 LangChain. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+</body>
 </html>
